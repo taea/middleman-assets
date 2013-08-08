@@ -1,6 +1,6 @@
 # Middleman::Assets
 
-Middleman プロジェクト用の asset ファイル管理 gem 雛形 for Desiner。
+Middleman プロジェクト用の asset ファイル管理雛形 gem for デザイナー。
 
 ## Usage
 
@@ -8,12 +8,13 @@ Middleman プロジェクト用の asset ファイル管理 gem 雛形 for Desin
 
 1. github でこのプロジェクトを fork する
 2. 手元に `git clone`
-3. CSS 等 asset ファイルを配置
-4. ファイルを追加し更新する場合には `lib/middleman-assets/version.rb` の `VERSION` の数字を変更
-5. `git add` && `git commit`
-6. 自分の github リポジトリに `git push`
+3. `middleman-assets.gemspec` の `authors` と `email` を書き換え
+4. CSS 等 asset ファイルを配置
+5. ファイルを追加し更新する場合には `lib/middleman-assets/version.rb` の `VERSION` の数字を変更
+6. `git add` && `git commit`
+7. 自分の github リポジトリに `git push`
 
-これで用意は完了です。
+これで準備は完了です。
 
 Middleman のプロジェクトでは次のようの使用します。
 
@@ -25,9 +26,13 @@ Gemfile の中に次の内容を追加します。
 
     gem "middleman-assets", :github => 'YOUR_GITHUB_ACCOUNT/middleman-assets'
 
+ファイルを保存してから `bundle` コマンドを使ってインストールします。
+
     $ bundle install --path vendor/bundle 
 
-これで Middleman の中から利用したいライブラリを呼び出すことができます。
+これで Middleman の中から利用したいライブラリを呼び出すことができます。`source` 以下のファイルを編集したら Middleman を起動しましょう。
+
+    $ bundle exec middleman server
 
 ## Contributing
 
