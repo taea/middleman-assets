@@ -6,8 +6,8 @@ require 'middleman-assets/version'
 Gem::Specification.new do |spec|
   spec.name          = "middleman-assets"
   spec.version       = Middleman::Assets::VERSION
-  spec.authors       = ["your name"]
-  spec.email         = ["mail@example.jp"]
+  spec.authors       = ["taea"]
+  spec.email         = ["igiari@gmail.com"]
   spec.description   = %q{This gem provides assets files for Middleman Project.}
   spec.summary       = %q{My assets gem for middleman.}
   spec.homepage      = ""
